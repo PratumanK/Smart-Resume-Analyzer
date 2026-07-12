@@ -1,0 +1,397 @@
+3D Modeling
+A/B Testing
+ASP.NET
+AWS Lambda
+Account Management
+Accounting
+Active Learning
+Active Listening
+ActiveMQ
+Adaptability
+Adobe After Effects
+Adobe Illustrator
+Adobe Photoshop
+Adobe Premiere Pro
+Adobe XD
+Affiliate Marketing
+Agile Methodology
+Agile Project Management
+Airflow
+Amazon Redshift
+Amazon Web Services (AWS)
+Analytical Thinking
+Angular
+Ansible
+Apache HTTP Server
+Apache Kafka
+Apache Spark
+Applicant Tracking Systems (ATS)
+ArangoDB
+Arduino
+ArgoCD
+Artificial Intelligence
+Audacity
+Audio Editing
+Auditing
+Auto Scaling
+AutoCAD
+Automated Testing
+Azure Functions
+B2B Sales
+Babel
+BambooHR
+Bash Scripting
+Behavior-Driven Development (BDD)
+Benefits Administration
+Bioinformatics
+Biostatistics
+Blender
+Bookkeeping
+Bootstrap
+Brand Management
+Budgeting
+Business Analysis
+C#
+C++
+C/C++ for Embedded
+CAD Design
+CCPA Compliance
+CI/CD Pipelines
+COBOL
+CRM
+CSS3
+Cassandra
+Change Management
+Chef
+Churn Reduction
+Cinema 4D
+CircleCI
+Client Relations
+Clinical Research
+Cloudflare
+Coaching
+Cold Calling
+Collaboration
+Communication
+Compliance
+Computer Vision
+Conflict Management
+Conflict Resolution
+Constructive Feedback
+Content Strategy
+Content Writing
+Contract Negotiation
+Conversion Rate Optimization (CRO)
+Copy Editing
+Copy-editing
+Copywriting
+Corporate Finance
+Creative Writing
+Creativity
+Crisis Management
+Critical Thinking
+Cross-cultural Communication
+Cross-functional Collaboration
+Cryptography
+Cultural Awareness
+Customer Relationship Management
+Customer Service
+Customer Success
+Cybersecurity
+Dart
+Data Analysis
+Data Governance
+Data Lineage
+Data Mining
+Data Visualization
+Data Warehousing
+Data Wrangling
+Databricks
+Decision Making
+Deep Learning
+Delegation
+Detail-Oriented
+Digital Marketing
+Diversity, Equity, and Inclusion (DEI)
+Django
+Docker
+Drupal
+DynamoDB
+E-learning
+ELK Stack
+ETL Pipelines
+Elasticsearch
+Electronic Health Records (EHR)
+Email Marketing
+Embedded Systems
+Emotional Intelligence
+Empathy
+Employee Engagement
+Employee Relations
+Enterprise Sales
+Ethical Hacking
+Event Planning
+Excel VBA
+Express.js
+FPGA
+FastAPI
+Feature Engineering
+Figma
+Final Cut Pro
+Financial Analysis
+Financial Modeling
+Finite Element Analysis (FEA)
+Firebase
+Firewall Management
+Firmware Development
+Flask
+Flexibility
+Fortran
+GDPR Compliance
+Gatsby
+Git
+GitHub
+GitLab
+GitOps
+Go
+Goal Setting
+Google Analytics
+Google BigQuery
+Google Cloud Functions
+Google Cloud Platform (GCP)
+Google Tag Manager
+Grafana
+GraphQL
+GraphQL Client
+Graphic Design
+Growth Hacking
+Growth Mindset
+HIPAA Compliance
+HRIS
+HTML5
+Hadoop
+Haskell
+Healthcare IT
+HubSpot
+Human Resources (HR)
+ISO 27001
+Identity & Access Management (IAM)
+Inbound Marketing
+Incident Response
+Inclusivity
+Influence
+Influencer Marketing
+InfluxDB
+Information Architecture
+Infrastructure as Code (IaC)
+Innovation
+Instructional Design
+Interaction Design
+Interpersonal Skills
+Inventory Management
+IoT Protocols
+Java
+JavaScript
+Jenkins
+Joomla
+Julia
+KPI Tracking
+Kanban
+Keras
+Key Account Management
+Kibana
+Kotlin
+Kubeflow
+Kubernetes
+LabVIEW
+Labor Law Compliance
+Laravel
+Lead Generation
+Leadership
+Lean Manufacturing
+Legal Research
+Linux
+Load Balancing
+Localization
+Logistics
+Logstash
+Lua
+MATLAB
+MATLAB Simulating
+MLOps
+MLflow
+MQTT
+Machine Learning
+Magento
+Malware Analysis
+Manual Testing
+Market Research
+Marketo
+Matplotlib
+Maya
+Medical Coding
+Meeting Facilitation
+Mentoring
+Microcontrollers
+Microservices Architecture
+Microsoft Azure
+Microsoft SQL Server
+MobX
+MongoDB
+Motion Graphics
+MySQL
+Natural Language Processing
+Negotiation
+Negotiation Skills
+Neo4j
+Net Promoter Score (NPS)
+Network Security
+Networking
+Next.js
+Nginx
+Node.js
+NumPy
+Nuxt.js
+OKRs
+Object-Oriented Programming (OOP)
+Objective-C
+Onboarding
+OpenShift
+Operations Management
+Oracle Database
+Organization
+Outbound Marketing
+PHP
+PLC Programming
+PMP
+Pandas
+Patient Care
+Payroll Processing
+Penetration Testing
+Performance Management
+Perl
+Persuasion
+Photography
+Podcast Production
+PostgreSQL
+Power BI
+Predictive Modeling
+Presentation Skills
+Problem Solving
+Procurement
+Product Management
+Product Roadmap
+Project Management
+Prometheus
+Prototyping
+Public Health
+Public Relations (PR)
+Public Speaking
+Puppet
+PyTorch
+Python
+Quality Assurance (QA)
+QuickBooks
+R
+REST API Design
+RESTful APIs
+RTOS
+RabbitMQ
+Raspberry Pi
+React.js
+Recruiting
+Redis
+Redux
+Remote Team Management
+Requirements Gathering
+Resilience
+Risk Assessment
+Risk Management
+Robotics Engineering
+Root Cause Analysis
+Ruby
+Ruby on Rails
+Rust
+SAS
+SAS Enterprise Guide
+SCADA
+SIEM
+SOC 2 Auditing
+SQL
+SQLite
+SaaS Sales
+Sales Pitching
+Salesforce
+Scala
+SciPy
+Scikit-Learn
+Scrum
+Scrum Master
+Seaborn
+Search Engine Marketing (SEM)
+Search Engine Optimization (SEO)
+Selenium
+Self-Motivation
+Serverless Architecture
+Shell Scripting
+Shopify Development
+Six Sigma
+Sketch
+Snowflake
+Social Media Marketing
+Software Development Life Cycle (SDLC)
+SolidWorks
+Solidity
+Splunk
+Spring Boot
+Stakeholder Management
+Statistical Modeling
+Statistical Process Control (SPC)
+Storytelling
+Strategic Planning
+Strategic Thinking
+Stress Management
+Succession Planning
+Supply Chain Management
+Svelte
+Swift
+System Administration
+System Design
+Tableau
+Tailwind CSS
+Talent Acquisition
+Tax Preparation
+Teamwork
+Technical Writing
+TensorFlow
+Terraform
+Test-Driven Development (TDD)
+Threat Intelligence
+Time Management
+Translation
+Travis CI
+TypeScript
+UI/UX Design
+Unix
+User Research
+VHDL
+Vagrant
+Vendor Management
+Verilog
+Video Editing
+Videography
+Virtual Collaboration
+Visual Communication
+Vite
+Vue.js
+Vulnerability Assessment
+Webpack
+Wireframing
+Wireshark
+WordPress
+Work Ethic
+Workday
+Zero Trust Architecture
+dbt (Data Build Tool)
+hugo
+jQuery
