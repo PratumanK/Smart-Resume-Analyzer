@@ -20,8 +20,14 @@ JOB_KEYWORDS = {
     "researcher",
     "programmer",
     "executive",
-    "trainee"
+    "trainee",
+    "sde",
+    "swe",
+    "mle"
+    
 }
+SEPARATORS = ["|", ",", " - ","-"]
+
 
 MONTHS = {
     "Jan": 1, "January": 1,
@@ -98,19 +104,31 @@ def extract_experience(doc):
         total_months += months_between(start, end)
 
         if last_role is None:
+            candidate = lines[i - 1] if i >= 1 else ""
+            for sep in SEPARATORS:
+                if sep in candidate:
+                    left, right = [x.strip() for x in candidate.split(sep, 1)]
+                    if looks_like_job_title(left):
+                        last_role = left
+                        last_company = right
+                    elif looks_like_job_title(right):
+                        last_role = right
+                        last_company = left
+                    break
+            
+            if last_role is None:
+                candidate1 = lines[i - 2] if i >= 2 else ""
+                candidate2 = lines[i - 1] if i >= 1 else ""
 
-            candidate1 = lines[i - 2] if i >= 2 else ""
-            candidate2 = lines[i - 1] if i >= 1 else ""
-
-            if looks_like_job_title(candidate1):
-                last_role = candidate1
-                last_company = candidate2
-            elif looks_like_job_title(candidate2):
-                last_role = candidate2
-                last_company = candidate1
-            else:
-                last_role = candidate2
-                last_company = candidate1
+                if looks_like_job_title(candidate1):
+                    last_role = candidate1
+                    last_company = candidate2
+                elif looks_like_job_title(candidate2):
+                    last_role = candidate2
+                    last_company = candidate1
+                else:
+                    last_role = candidate2
+                    last_company = candidate1
 
     return {
         "total_experience_months": total_months,

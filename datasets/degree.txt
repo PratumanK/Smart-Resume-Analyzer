@@ -1,0 +1,73 @@
+Class 10
+10th
+Matric
+Matriculation
+Secondary School Certificate
+Class 12
+12th
+Intermediate
+Higher Secondary
+Higher Secondary Certificate
+Diploma
+Diploma in Engineering
+Polytechnic
+Diploma in Computer Applications
+Diploma in Business Administration
+B.Tech
+BTech
+Bachelor of Technology
+B.E.
+BE
+Bachelor of Engineering
+B.Sc
+Bachelor of Science
+BCA
+Bachelor of Computer Applications
+BBA
+Bachelor of Business Administration
+B.Com
+Bachelor of Commerce
+B.A.
+Bachelor of Arts
+M.Tech
+MTech
+Master of Technology
+M.E.
+ME
+Master of Engineering
+M.Sc
+Master of Science
+MCA
+Master of Computer Applications
+MBA
+Master of Business Administration
+M.Com
+Master of Commerce
+M.A.
+Master of Arts
+PhD
+Ph.D.
+Doctor of Philosophy
+PostDoc
+Post Doctoral Fellowship
+Class 10th (Secondary School Certificate / Metric)
+Class 12th (Higher Secondary Certificate / Intermediate)
+Diploma in Engineering (Polytechnic)
+Diploma in Computer Applications
+Diploma in Business Administration
+B.Tech (Bachelor of Technology)
+B.E. (Bachelor of Engineering)
+B.Sc (Bachelor of Science)
+BCA (Bachelor of Computer Applications)
+BBA (Bachelor of Business Administration)
+B.Com (Bachelor of Commerce)
+B.A. (Bachelor of Arts)
+M.Tech (Master of Technology)
+M.E. (Master of Engineering)
+M.Sc (Master of Science)
+MCA (Master of Computer Applications)
+MBA (Master of Business Administration)
+M.Com (Master of Commerce)
+M.A. (Master of Arts)
+Ph.D. (Doctor of Philosophy)
+Post Doctoral Fellowship (PostDoc)
