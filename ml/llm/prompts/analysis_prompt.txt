@@ -1,0 +1,202 @@
+Using the supplied analysis JSON, generate a structured report.
+
+The report must contain exactly these sections:
+
+1. Overall Analysis
+- Explain how well the resume matches the job description.
+- Explain the ATS score.
+- Mention the major factors that influenced the score.
+
+2. Key Strengths
+- List 3 major strengths
+- Be specific about the strengths.
+- Each strength must include a short explanation regarding how it matters to this job.
+
+3. Key Gaps
+- List up to 3 of the most important missing skills, experience gaps, or education gaps.
+- Explain why each gap matters for this specific job.
+
+4. Career Improvement Roadmap
+Generate exactly three priorities.
+
+For each priority include:
+- Priority title
+- Why it is important
+- Recommended action
+- How the candidate can demonstrate this improvement on their resume.
+
+Only use the supplied JSON.
+Never invent facts.
+
+Return the output in the following JSON format:
+-Example 1(Strong Match)
+{
+  "overall_analysis": "The resume demonstrates a strong alignment with the job description. The candidate possesses most of the required technical skills, relevant project experience, and meets the education and experience requirements. The ATS score is high because the resume contains strong keyword coverage and closely matches the responsibilities mentioned in the job description.",
+
+  "key_strengths": [
+    {
+      "title": "Excellent Technical Skill Match",
+      "description": "The resume includes nearly all of the required technical skills including Python, FastAPI, TensorFlow, SQL, and Machine Learning."
+    },
+    {
+      "title": "Relevant AI Projects",
+      "description": "The projects demonstrate practical experience in NLP and Machine Learning, closely matching the responsibilities of the position."
+    },
+    {
+      "title": "Strong Experience Match",
+      "description": "The candidate satisfies the required years of experience and has worked on technologies directly relevant to the role."
+    }
+  ],
+
+  "key_gaps": [
+    {
+      "title": "Limited Cloud Experience",
+      "description": "Although the resume is technically strong, there is limited evidence of cloud deployment using AWS or Azure."
+    }
+  ],
+
+  "career_improvement_roadmap": [
+    {
+      "priority": 1,
+      "title": "Learn AWS Deployment",
+      "reason": "Cloud deployment is frequently required for production ML systems.",
+      "action": "Learn AWS EC2, S3, and basic deployment workflows.",
+      "resume_demonstration": "Deploy an existing FastAPI ML application on AWS and include the deployment in the Projects section."
+    },
+    {
+      "priority": 2,
+      "title": "Learn Docker",
+      "reason": "Containerization improves deployment readiness.",
+      "action": "Dockerize one existing Machine Learning application.",
+      "resume_demonstration": "Mention Docker in the project technology stack and deployment description."
+    },
+    {
+      "priority": 3,
+      "title": "Quantify Project Impact",
+      "reason": "Recruiters value measurable achievements.",
+      "action": "Add performance metrics and measurable outcomes for each project.",
+      "resume_demonstration": "Include metrics such as accuracy, inference speed, or processing improvements."
+    }
+  ]
+}
+
+
+-Example 2 (Moderate Match)
+{
+  "overall_analysis": "The resume has a moderate match with the job description. The candidate demonstrates a solid foundation in Machine Learning and Python but is missing several infrastructure and deployment technologies required for the position. The ATS score reflects good technical alignment but is reduced due to missing keywords and limited production experience.",
+
+  "key_strengths": [
+    {
+      "title": "Strong Python Foundation",
+      "description": "Python is consistently used across projects and aligns well with the job requirements."
+    },
+    {
+      "title": "Relevant Machine Learning Knowledge",
+      "description": "The candidate has demonstrated practical understanding of NLP and classical Machine Learning."
+    },
+    {
+      "title": "Good Educational Background",
+      "description": "The educational qualifications satisfy the minimum requirements of the role."
+    }
+  ],
+
+  "key_gaps": [
+    {
+      "title": "Missing Docker",
+      "description": "Docker is listed as a required skill but is absent from the resume."
+    },
+    {
+      "title": "No Cloud Deployment Experience",
+      "description": "The resume does not demonstrate experience deploying applications to cloud platforms."
+    },
+    {
+      "title": "Experience Gap",
+      "description": "The candidate has slightly less professional experience than requested in the job description."
+    }
+  ],
+
+  "career_improvement_roadmap": [
+    {
+      "priority": 1,
+      "title": "Learn Docker",
+      "reason": "Docker is a required technology for this position.",
+      "action": "Containerize an existing FastAPI application.",
+      "resume_demonstration": "Add Docker to the technology stack of deployed projects."
+    },
+    {
+      "priority": 2,
+      "title": "Deploy an ML Project",
+      "reason": "Deployment experience strengthens practical credibility.",
+      "action": "Deploy a resume analyzer or another ML project using FastAPI and Render or AWS.",
+      "resume_demonstration": "Include deployment links and deployment technologies in the project description."
+    },
+    {
+      "priority": 3,
+      "title": "Learn AWS Fundamentals",
+      "reason": "Cloud knowledge is frequently expected for ML engineering roles.",
+      "action": "Study AWS services commonly used for ML deployment.",
+      "resume_demonstration": "Build a small deployment project using AWS and document it on the resume."
+    }
+  ]
+}
+
+-Example 3 (Weak Match)
+{
+  "overall_analysis": "The resume currently has limited alignment with the job description. While the candidate demonstrates programming knowledge, many of the required technical skills, project experiences, and domain-specific technologies are missing. The ATS score is low because the resume contains limited keyword overlap and insufficient evidence of relevant experience.",
+
+  "key_strengths": [
+    {
+      "title": "Programming Fundamentals",
+      "description": "The candidate demonstrates familiarity with programming concepts and software development."
+    },
+    {
+      "title": "Relevant Degree",
+      "description": "The educational qualifications satisfy the minimum academic requirement."
+    }
+  ],
+
+  "key_gaps": [
+    {
+      "title": "Missing Core Technical Skills",
+      "description": "Several required technologies including Python, SQL, Docker, Machine Learning, and AWS are absent."
+    },
+    {
+      "title": "Limited Relevant Projects",
+      "description": "The projects do not demonstrate experience closely related to the responsibilities of the position."
+    },
+    {
+      "title": "Insufficient Experience",
+      "description": "The candidate does not yet meet the required professional experience level."
+    }
+  ],
+
+  "career_improvement_roadmap": [
+    {
+      "priority": 1,
+      "title": "Build Core Machine Learning Skills",
+      "reason": "Machine Learning is fundamental to the target role.",
+      "action": "Learn supervised learning, model evaluation, and Python ML libraries.",
+      "resume_demonstration": "Build and document at least two Machine Learning projects."
+    },
+    {
+      "priority": 2,
+      "title": "Develop Practical AI Projects",
+      "reason": "Projects provide evidence of technical ability.",
+      "action": "Create end-to-end projects using FastAPI, Python, and NLP.",
+      "resume_demonstration": "Publish projects on GitHub and include measurable outcomes."
+    },
+    {
+      "priority": 3,
+      "title": "Learn Deployment Technologies",
+      "reason": "Modern ML roles require deployment knowledge.",
+      "action": "Learn Docker and basic cloud deployment concepts.",
+      "resume_demonstration": "Deploy an ML application and include the deployment in the resume."
+    }
+  ]
+}
+
+Return ONLY a valid JSON object.
+
+Do not include markdown.
+Do not include code fences.
+Do not include explanations before or after the JSON.

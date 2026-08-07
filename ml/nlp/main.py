@@ -45,4 +45,30 @@ ats=calculate_ats_score(
 
 
 
+def analyze_resume():
+    analysis = {
+    "ats_score": ats,
+
+    "semantic_similarity": similarity_score,
+
+    "skills": skillMatcher_result,
+
+    "experience": experienceMatcher_result,
+
+    "education": educationMatcher_result,
+
+    "resume": {
+        "skills": list(resume_skills),
+        "experience": resume_experience,
+        "education": resume_education
+    },
+
+    "job_description": {
+        "skills": list(jd_skills),
+        "experience": jd_experience,
+        "education": jd_education
+    }
+}
+    return analysis
+
 

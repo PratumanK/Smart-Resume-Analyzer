@@ -166,7 +166,7 @@ def jd_degree_level(jd_degree):
 
     return DEGREE_LEVEL[degree]
 
-def education_match(resume_education, jd_degree):
+def match_education(resume_education, jd_degree):
 
     resume_level = highest_resume_degree(resume_education)
     jd_level = jd_degree_level(jd_degree)
