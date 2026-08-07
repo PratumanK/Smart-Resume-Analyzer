@@ -11,15 +11,16 @@ from llm.report_generator import report_generation
 
 
 
-
+resume_data = parse_resume("resume.pdf")
+jd_data = parse_jd("jd.pdf") 
+resume_text = resume_to_text(resume_data)
+jd_text = jd_to_text(jd_data)
 
 
 
 def analyze_resume():
-    resume_data = parse_resume("resume.pdf")
-    jd_data = parse_jd("jd.pdf") 
-    resume_text = resume_to_text(resume_data)
-    jd_text = jd_to_text(jd_data)
+    
+    
 
     resume_embedding1 = resume_embedding(resume_text)
     jd_embedding2 = jd_embedding(jd_text)
