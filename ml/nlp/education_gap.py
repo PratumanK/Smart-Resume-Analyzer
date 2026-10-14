@@ -135,14 +135,53 @@ DEGREE_LEVEL = {
     "post_doctorate": 6,
 }
 
-def normalize_degree(degree):
 
+import re
+
+
+import re
+
+def normalize_degree(degree):
     if degree is None:
         return None
 
     degree = degree.lower().strip()
+    degree = re.sub(r"\s+", " ", degree)
+    degree = degree.rstrip(".")
 
+    # Check full degree names first.
+    if "bachelor of technology" in degree or "b.tech" in degree:
+        return "bachelor"
+
+    if "bachelor of engineering" in degree:
+        return "bachelor"
+
+    if "bachelor" in degree:
+        return "bachelor"
+
+    if "master of technology" in degree or "m.tech" in degree:
+        return "master"
+
+    if "master of engineering" in degree:
+        return "master"
+
+    if "master" in degree:
+        return "master"
+
+    # Handle other common degree abbreviations.
+    if re.search(r"\b(bca|bba|bsc|b\.sc|bcom|b\.com|ba|b\.a)\b", degree):
+        return "bachelor"
+
+    if re.search(r"\b(mca|mba|msc|m\.sc|mcom|m\.com|ma|m\.a)\b", degree):
+        return "master"
+
+    if re.search(r"\b(phd|ph\.d)\b", degree):
+        return "doctorate"
+
+    # Retain the existing exact-match mappings.
     return DEGREE_MAP.get(degree)
+
+
 def highest_resume_degree(resume_education):
 
     highest = -1

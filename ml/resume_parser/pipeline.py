@@ -1,13 +1,14 @@
 import spacy
 
-from parser import extract_text
-from cleaner import ResumeCleaner
 
-from section_detector import detect_sections
-from skills import extract_skills
-from experience import extract_experience
-from education import extract_education
-from projects import extract_projects
+from .parser import extract_text
+from .cleaner import ResumeCleaner
+from .section_detector import detect_sections
+from .skills import extract_skills
+from .experience import extract_experience
+from .education import extract_education
+from .projects import extract_projects
+
 
 nlp = spacy.load("en_core_web_sm")
 

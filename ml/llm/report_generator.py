@@ -1,5 +1,5 @@
-from prompt_builder import build_prompt
-from providers.ollama_provider import OllamaProvider
+from .prompt_builder import build_prompt
+from .providers.ollama_provider import OllamaProvider
 
 def report_generation(analysis):
     provider = OllamaProvider()

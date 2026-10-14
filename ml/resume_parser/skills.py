@@ -1,5 +1,5 @@
 import spacy
-from parser import extract_text
+from .parser import extract_text
 from spacy.matcher import PhraseMatcher
 nlp = spacy.load("en_core_web_sm")
 def load_skills():

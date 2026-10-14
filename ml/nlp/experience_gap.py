@@ -1,6 +1,6 @@
 import re
-from embeddings import resume_embedding,jd_embedding
-from similarity import calculate_similarity
+from .embeddings import resume_embedding,jd_embedding
+from .similarity import calculate_similarity
 def parse_experience_requirement(exp):
     if exp is None:
         return None
@@ -21,7 +21,9 @@ def parse_experience_requirement(exp):
     return None
 def match_experience(resume_experience,jd_experience):
     candidate=resume_experience["total_experience_years"]
-    required=parse_experience_requirement(jd_experience)
+    required = parse_experience_requirement(
+    jd_experience["experience_required"]
+    )
     difference = None
     if required is not None:
         difference = round(candidate - required, 1)

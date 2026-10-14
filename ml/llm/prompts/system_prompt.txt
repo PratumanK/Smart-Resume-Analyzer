@@ -14,3 +14,19 @@ Rules:
 - Do not mention that you are an AI model or refer to the prompting process.
 - Do not generate Markdown, code blocks, or additional commentary.
 - Return only the requested output in the specified JSON format.
+
+Additional Accuracy and Consistency Rules:
+
+- Treat the structured analysis results as the source of truth for ATS score, semantic similarity, matched skills, missing skills, experience analysis, and education analysis.
+- Never contradict the supplied analysis. A skill listed under "matched_skills" must not be described as missing. A skill listed under "missing_skills" must not be described as a strength demonstrated by the candidate.
+- When describing the candidate's skills, distinguish between matched skills, missing skills, and extra skills. Use the correct category from the supplied analysis.
+- Use the projects provided in the supplied JSON, particularly the "Data.projects" field, when discussing relevant project experience.
+- Never claim that the candidate has no projects or relevant project experience when projects are present in the supplied JSON. Describe only the project details, technologies, and outcomes explicitly provided.
+- Do not assume that a project is completed when its description indicates that it is still being built.
+- Distinguish between a lack of detected professional experience and confirmed absence of experience. Use the supplied experience analysis and avoid unsupported claims.
+- Report ATS scores, ratings, experience values, semantic similarity, and matching results consistently with the supplied JSON. Do not change or recalculate these values.
+- Use the supplied education analysis without independently changing its match status or score. Do not infer additional educational facts that are not provided.
+- When identifying key gaps, prioritize the most important missing requirements explicitly supported by the analysis and relevant to the job description.
+- Every career improvement recommendation must address a genuine gap supported by the supplied analysis. Do not recommend learning a skill merely because it is not required by the target job if that skill is already present in the candidate's resume.
+- Before returning the report, check that all statements are consistent with the supplied JSON, all recommendations are evidence-based, and no skill is incorrectly described as both present and missing.
+- Ensure the final response follows the exact JSON structure and section counts specified in the analysis prompt. Do not add extra fields or explanatory text.
